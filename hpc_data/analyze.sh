@@ -1,5 +1,6 @@
 #!/bin/bash
 source ~/alps-venv/bin/activate
+pip install h5py pandas plotnine
 
 # Loop through each dca_tp.hdf5 file in directories starting with T
 for file in T*/dca_tp.hdf5; do
