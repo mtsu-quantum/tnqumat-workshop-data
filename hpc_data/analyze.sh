@@ -11,3 +11,4 @@ for file in T*/dca_tp.hdf5; do
         echo "File $file does not exist, skipping."
     fi
 done
+echo "All done!"
