@@ -18,6 +18,7 @@ mpirun -np 10 main_dca input_sp.json
 ## Analyzing the HPC Data
 ```bash
 cd ~/tnqumat-workshop-data/hpc_data
-python analyze_main.py T*/dca_tp.hdf5
+chmod +x analyze.sh
+./analyze.sh
 python compute_tc_new.py
 ```
