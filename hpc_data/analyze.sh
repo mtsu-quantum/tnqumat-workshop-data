@@ -6,7 +6,7 @@ pip install h5py pandas plotnine
 for file in T*/dca_tp.hdf5; do
     if [[ -f "$file" ]]; then  # Check if the file exists
         echo "Processing $file..."
-        python analyze_main.py "$file"  # Run the Python script on each file
+        python analyze_main.py "$file" > "${file}_out" & # Run the Python script on each file
     else
         echo "File $file does not exist, skipping."
     fi
